@@ -227,3 +227,67 @@ button.secondary:hover {
   
 }
 
+
+/* Mobile phones */
+@media (max-width: 640px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .site-header {
+    padding: 1rem 0.5rem;
+  }
+
+  .site-title {
+    font-size: 1.3rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .field input {
+    font-size: 0.85rem;
+  }
+
+  .action-btn {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .students-table thead {
+    display: none; /* hide table headers */
+  }
+
+  .students-table, .students-table tbody, .students-table tr, .students-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .students-table tr {
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+  }
+
+  .students-table td {
+    border: none;
+    padding: 0.4rem 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+  }
+
+  .students-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #9ca3af;
+    text-align: left;
+  }
+}
