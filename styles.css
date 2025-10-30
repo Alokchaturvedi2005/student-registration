@@ -9,7 +9,7 @@
   padding: 0;
 }
 
-/* === Background & Typography === */
+/* === Background & Typography === 😊*/
 body {
   font-family: "Poppins", "Segoe UI", Arial, sans-serif;
   color: #f3f4f6;
@@ -18,7 +18,7 @@ body {
   line-height: 1.5;
 }
 
-/* === Header === */
+/* === Header === 😊*/
 .site-header {
   text-align: center;
   color: #fff;
@@ -30,15 +30,8 @@ body {
 
 
 
-/* === Header === */
-/* .site-header {
-  text-align: center;
-  color: #fff;
-  padding: 2rem 1rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-} */
+/* === Header === 😊*/
+
 .site-header h1 {
   font-size: 2rem;
   letter-spacing: 1px;
@@ -50,7 +43,7 @@ body {
   font-size: 1rem;
 }
 
-/* === Logo in Header === */
+/* === Logo in Header === 😊*/
 .logo-box {
   display: flex;
   align-items: center;
@@ -81,7 +74,7 @@ body {
 }
 
 
-/* === Main Layout === */
+/* === Main Layout === 😊*/
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -97,7 +90,7 @@ body {
   }
 }
 
-/* === Glassmorphism Box === */
+/* === Glassmorphism Box === 😊*/
 .form-section, .display-section {
   background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(12px);
@@ -119,7 +112,7 @@ h2 {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
-/* === Form Fields === */
+/* === Form Fields === 😊*/
 .field {
   margin-bottom: 1rem;
   display: flex;
@@ -138,7 +131,6 @@ h2 {
   color: #fff;
   font-size: 0.95rem;
   outline: none;
-  /* transition: background 0.3s, border 0.3s; */
 }
 .field input:focus {
   background: rgba(255, 255, 255, 0.3);
@@ -151,7 +143,7 @@ h2 {
   height: 0.9rem;
 }
 
-/* === Buttons === */
+/* === Buttons ===😊 */
 button {
   border: none;
   padding: 0.6rem 1rem;
@@ -177,7 +169,7 @@ button.secondary:hover {
   background: rgba(255, 255, 255, 0.35);
 }
 
-/* === Table Section === */
+/* === Table Section === 😊*/
 .table-wrapper {
   max-height: 300px;
   overflow: hidden;
@@ -205,7 +197,7 @@ button.secondary:hover {
   color: #f9fafb;
 }
 
-/* === Action Buttons in Table === */
+/* === Action Buttons in Table ===😊 */
 .action-btn {
   padding: 0.4rem 0.6rem;
   border-radius: 6px;
@@ -227,14 +219,14 @@ button.secondary:hover {
   transform: scale(1.05);
 }
 
-/* === Footer === */
+/* === Footer ===😊 */
 .site-footer {
   text-align: center;
   padding: 1.2rem;
   /* color: rgba(255, 255, 255, 0.9); */
   background: rgba(32, 35, 55, 0.727);
   backdrop-filter: blur(6px);   
-  /* font-size: 0.9rem; */
+  
   
 }
 
