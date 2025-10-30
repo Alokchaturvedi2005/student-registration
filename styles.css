@@ -1,0 +1,240 @@
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+} 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Background & Typography === */
+body {
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  color: #f3f4f6;
+  background: #0b1120; /* Single solid color background */
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* === Header === */
+.site-header {
+  text-align: center;
+  color: #fff;
+  padding: 2rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+
+
+/* === Header === */
+/* .site-header {
+  text-align: center;
+  color: #fff;
+  padding: 2rem 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+} */
+.site-header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.subtitle {
+  margin-top: 0.4rem;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+/* === Logo in Header === */
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.logo-img {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: rgb(8, 67, 102);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  padding: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.site-title {
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00e0ff, #ff0080, #fddb92);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* === Main Layout === */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+@media (max-width: 960px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === Glassmorphism Box === */
+.form-section, .display-section {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  padding: 1.5rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-section:hover, .display-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* === Form Fields === */
+.field {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.field label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+.field input {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  /* transition: background 0.3s, border 0.3s; */
+}
+.field input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #fff;
+}
+.err {
+  color: #ffbaba;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  height: 0.9rem;
+}
+
+/* === Buttons === */
+button {
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}
+button#saveBtn {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+}
+button#saveBtn:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: scale(1.05);
+}
+button.secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+button.secondary:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* === Table Section === */
+.table-wrapper {
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.students-table thead th {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  text-align: left;
+  padding: 0.7rem;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(6px);
+  font-weight: 600;
+}
+.students-table td {
+  padding: 0.6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f9fafb;
+}
+
+/* === Action Buttons in Table === */
+.action-btn {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  margin-right: 0.3rem;
+  font-weight: 600;
+  border: none;
+  color: #fff;
+}
+.edit-btn {
+  background: #fbbf24;
+  color: #000;
+  margin: 5px;
+}
+.del-btn {
+  background: #ef4444;
+}
+.action-btn:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+/* === Footer === */
+.site-footer {
+  text-align: center;
+  padding: 1.2rem;
+  /* color: rgba(255, 255, 255, 0.9); */
+  background: rgba(32, 35, 55, 0.727);
+  backdrop-filter: blur(6px);   
+  /* font-size: 0.9rem; */
+  
+}
+
