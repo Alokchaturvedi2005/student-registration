@@ -37,11 +37,7 @@ body {
   letter-spacing: 1px;
   font-weight: 700;
 }
-.subtitle {
-  margin-top: 0.4rem;
-  opacity: 0.9;
-  font-size: 1rem;
-}
+
 
 /* === Logo in Header === 😊*/
 .logo-box {
